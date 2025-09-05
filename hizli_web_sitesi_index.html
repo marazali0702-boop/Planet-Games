@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Markan | Hızlı Başlangıç Sitesi</title>
+    <meta name="description" content="Markanız için modern, hızlı ve mobil uyumlu tek sayfalık web sitesi şablonu." />
+    <link rel="icon" href="/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Küçük iyileştirmeler */
+      html { scroll-behavior: smooth; }
+      /* Form doğrulama ipucu */
+      input:required:invalid, textarea:required:invalid { outline: 2px solid rgba(239,68,68,.4); }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-slate-50 to-slate-100 text-slate-800">
+    <!-- Üst Çubuk -->
+    <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="#" class="font-bold text-xl tracking-tight">Markan</a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#ozellikler" class="hover:text-slate-900">Özellikler</a>
+          <a href="#fiyat" class="hover:text-slate-900">Fiyat</a>
+          <a href="#iletisim" class="hover:text-slate-900">İletişim</a>
+        </nav>
+        <a href="#iletisim" class="inline-flex items-center rounded-2xl bg-slate-900 px-4 py-2 text-white text-sm font-semibold shadow hover:opacity-90">Hemen Başla</a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="max-w-6xl mx-auto px-4 py-24 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Dakikalar içinde <span class="bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-600">modern bir web sitesi</span> kur.</h1>
+          <p class="mt-5 text-lg text-slate-600">Bu tek sayfalık şablon mobil uyumlu, hızlı ve özelleştirmesi çok kolay. Metinleri değiştir, logonu ekle, yayınla.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#ozellikler" class="rounded-2xl bg-slate-900 text-white px-5 py-3 font-semibold shadow hover:opacity-90">Özellikleri Gör</a>
+            <a href="#iletisim" class="rounded-2xl border border-slate-300 px-5 py-3 font-semibold hover:bg-white">Teklif Al</a>
+          </div>
+          <div class="mt-6 text-xs text-slate-500">• %100 mobil uyumlu • SEO dostu • Ücretsiz barındırma ile uyumlu</div>
+        </div>
+        <div class="bg-white/70 rounded-3xl shadow-xl p-6 border border-slate-200">
+          <!-- Basit görsel/placeholder -->
+          <div class="aspect-video rounded-2xl bg-gradient-to-br from-slate-200 to-slate-300 grid place-items-center">
+            <div class="text-center">
+              <div class="text-6xl">🚀</div>
+              <div class="mt-2 text-sm text-slate-600">Ekran görüntüsü/ürün görseli yerleştirin</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Güven göstergeleri -->
+    <section class="py-10">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center opacity-70">
+          <div class="text-center text-sm">SSL Güvenli</div>
+          <div class="text-center text-sm">Hızlı Yükleme</div>
+          <div class="text-center text-sm">SEO Hazır</div>
+          <div class="text-center text-sm">Kolay Özelleştirme</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Özellikler -->
+    <section id="ozellikler" class="py-20">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold">Neler Sunuyor?</h2>
+        <p class="mt-2 text-slate-600">İhtiyacınız olan temel bileşenlerin hepsi tek dosyada.</p>
+        <div class="mt-10 grid md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+            <h3 class="font-semibold text-lg">Hızlı Kurulum</h3>
+            <p class="mt-2 text-slate-600 text-sm">Sadece bu <code>index.html</code> dosyasını yükleyin, yayınlansın.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+            <h3 class="font-semibold text-lg">Mobil Uyum</h3>
+            <p class="mt-2 text-slate-600 text-sm">Tüm cihazlarda kusursuz görünüm için responsive grid.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+            <h3 class="font-semibold text-lg">Kolay Özelleştirme</h3>
+            <p class="mt-2 text-slate-600 text-sm">Metinleri değiştir, görsel ekle, kendi alan adını bağla.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fiyatlandırma -->
+    <section id="fiyat" class="py-20 bg-white/70 border-y border-slate-200">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold">Basit Fiyatlandırma</h2>
+        <p class="mt-2 text-slate-600">İhtiyacına göre bir plan seç.</p>
+        <div class="mt-10 grid md:grid-cols-3 gap-6">
+          <div class="rounded-2xl p-6 border border-slate-200">
+            <div class="text-sm font-semibold">Başlangıç</div>
+            <div class="mt-2 text-3xl font-extrabold">₺0</div>
+            <ul class="mt-4 text-sm text-slate-600 space-y-2 list-disc list-inside">
+              <li>Statik tek sayfa</li>
+              <li>GitHub Pages / Vercel</li>
+              <li>Temel SEO</li>
+            </ul>
+            <a href="#iletisim" class="mt-6 inline-block rounded-xl bg-slate-900 text-white px-4 py-2 text-sm font-semibold">Seç</a>
+          </div>
+          <div class="rounded-2xl p-6 border border-slate-200 ring-2 ring-slate-900">
+            <div class="text-sm font-semibold">Profesyonel</div>
+            <div class="mt-2 text-3xl font-extrabold">₺—</div>
+            <ul class="mt-4 text-sm text-slate-600 space-y-2 list-disc list-inside">
+              <li>Özel alan adı</li>
+              <li>Analitik ve formlar</li>
+              <li>Performans optimizasyonu</li>
+            </ul>
+            <a href="#iletisim" class="mt-6 inline-block rounded-xl bg-slate-900 text-white px-4 py-2 text-sm font-semibold">Teklif Al</a>
+          </div>
+          <div class="rounded-2xl p-6 border border-slate-200">
+            <div class="text-sm font-semibold">Kurumsal</div>
+            <div class="mt-2 text-3xl font-extrabold">İletişim</div>
+            <ul class="mt-4 text-sm text-slate-600 space-y-2 list-disc list-inside">
+              <li>Özel gereksinimler</li>
+              <li>Öncelikli destek</li>
+              <li>Gelişmiş entegrasyonlar</li>
+            </ul>
+            <a href="#iletisim" class="mt-6 inline-block rounded-xl bg-slate-900 text-white px-4 py-2 text-sm font-semibold">Görüşelim</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- İletişim -->
+    <section id="iletisim" class="py-20">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold">İletişime Geç</h2>
+        <p class="mt-2 text-slate-600">Aşağıdaki formu doldurun, en kısa sürede dönüş yapalım.</p>
+        <form class="mt-8 grid md:grid-cols-2 gap-4 bg-white rounded-2xl p-6 border border-slate-200 shadow-sm" method="POST" action="https://formspree.io/f/your-id">
+          <!-- Not: Formspree veya benzeri bir servis ile action URL'sini değiştirin. -->
+          <input required type="text" name="ad" placeholder="Ad Soyad" class="w-full rounded-xl border border-slate-300 px-4 py-3" />
+          <input required type="email" name="email" placeholder="E-posta" class="w-full rounded-xl border border-slate-300 px-4 py-3" />
+          <textarea required name="mesaj" placeholder="Mesajınız" rows="5" class="md:col-span-2 w-full rounded-xl border border-slate-300 px-4 py-3"></textarea>
+          <button type="submit" class="md:col-span-2 rounded-2xl bg-slate-900 text-white px-5 py-3 font-semibold">Gönder</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Altbilgi -->
+    <footer class="py-10 text-center text-sm text-slate-500">
+      <div class="max-w-6xl mx-auto px-4">
+        © <span id="yil"></span> Markan. Tüm hakları saklıdır.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('yil').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
